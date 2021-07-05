@@ -17,3 +17,16 @@ body {
 .navbar {
     background-color: #414145 !important;
 }
+
+/* event */
+
+.alert {
+    background-color: #48995a;
+    border: 4px solid #000;
+    border-radius: 15px;
+}
+
+.alert-link {
+    text-decoration: none;
+    color: #fff;
+}

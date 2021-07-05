@@ -42,11 +42,6 @@ class Event
      */
     private $display;
 
-    /**
-     * @ORM\Column(type="datetime_immutable")
-     */
-    private $createdAt;
-
     public function getId(): ?int
     {
         return $this->id;

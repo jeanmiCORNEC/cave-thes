@@ -2,6 +2,10 @@
 
 
 {% block body %}
+
+	{% if event.0.display %}
+		{% include "/assets/_event.html.twig" %}
+	{% endif %}
+
 	{% include "/assets/_carousel.html.twig" %}
-	{% include "/assets/_event.html.twig" %}
 {% endblock %}
