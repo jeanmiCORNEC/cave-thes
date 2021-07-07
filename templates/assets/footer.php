@@ -1,0 +1,33 @@
+<!-- footer -->
+
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <div class="navbar-nav">
+            <ul class="nav-foot">
+                <li class="nav-item">
+                    <a class="nav-link facebook" href="contact.php">Contact</a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link facebook" href="https://www.facebook.com/caveathes" target="_blank">Facebook</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link insta" href="https://www.instagram.com/lorenemillet/" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<ul class="nav-foot pb-2">
+    <li class="nav-item">
+        <img src="/img/typo/etiquette.png" alt="" class="img-gouv" height="30">
+        <div class="me-auto"><small>Ce projet a été financé par le Gouvernement dans le cadre du plan de relance</small></div>
+    </li>
+</ul>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
