@@ -1,20 +1,46 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!{% endblock %}
+{% block title %}Hello ContactController!
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/jmi/Bureau/dev-perso/cave/src/Controller/ContactController.php'|file_link(0) }}">src/Controller/ContactController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/jmi/Bureau/dev-perso/cave/templates/contact/index.html.twig'|file_link(0) }}">templates/contact/index.html.twig</a></code></li>
-    </ul>
-</div>
+	<div class="container text-center my-5">
+		<h1>Demande d'informations</h1>
+		<p>Vous êtes un particulier ou un professionnel?
+			<br>
+			Vous souhaitez obtenir des informations sur la cave à thés?
+			<br>Contactez-nous via le formulaire ci-dessous, par mail ou par téléphone, nous vous répondrons dans les meilleurs délais</p>
+	</div>
+	<div class="container ">
+		<div class="mb-3">
+			{{ form_start(form) }}
+			<div class="warning">
+				{{ form_errors(form) }}
+			</div>
+			<div class="col-sm-3 my-1 ">
+				{{ form_row(form.isPro) }}
+			</div>
+			<div class="col-sm-3 my-1 ">
+				{{ form_row(form.name) }}
+			</div>
+			<div class="col-sm-3 my-1 ">
+				{{ form_row(form.firstName) }}
+			</div>
+			<div class="col-sm-3 my-1 ">
+				{{ form_row(form.society) }}
+			</div>
+			<div class="col-sm-3 my-1 ">
+				{{ form_row(form.email) }}
+			</div>
+			<div class="col-sm-3 my-1 ">
+				{{ form_row(form.phone) }}
+			</div>
+			<div class="col-sm-3 my-1 ">
+				{{ form_row(form.object) }}
+			</div>
+		</div>
+		{{ form_row(form.comment) }}
+		<button class="btn btn-outline-dark mx-3 my-3 col-sm-3" type="submit">Envoyer</button>
+		{{ form_end(form) }}
+	</div>
 {% endblock %}
