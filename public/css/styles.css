@@ -78,7 +78,7 @@ a:hover {
 
 /* event */
 
-.alert {
+.alert-event {
     background-color: #48995a;
     border: 4px solid #000;
     border-radius: 15px;
@@ -92,5 +92,3 @@ a:hover {
 .alert-link:hover {
     color: #414145;
 }
-
-/* page contact */

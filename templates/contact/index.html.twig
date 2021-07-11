@@ -11,7 +11,7 @@
 			Vous souhaitez obtenir des informations sur la cave à thés?
 			<br>Contactez-nous via le formulaire ci-dessous, par mail ou par téléphone, nous vous répondrons dans les meilleurs délais</p>
 	</div>
-	<div class="container ">
+	<div class="container form">
 		<div class="mb-3">
 			{{ form_start(form) }}
 			<div class="warning">
@@ -20,27 +20,34 @@
 			<div class="col-sm-3 my-1 ">
 				{{ form_row(form.isPro) }}
 			</div>
-			<div class="col-sm-3 my-1 ">
-				{{ form_row(form.name) }}
+			<div class="input-group">
+				<div class="col-sm-2 my-1 ">
+					{{ form_row(form.name) }}
+				</div>
+				<div class="col-sm-2 my-1 mx-5 ">
+					{{ form_row(form.firstName) }}
+				</div>
+				<div class="col-sm-2 my-1 mx-5">
+					{{ form_row(form.society) }}
+				</div>
 			</div>
-			<div class="col-sm-3 my-1 ">
-				{{ form_row(form.firstName) }}
+			<div class="input-group">
+				<div class="col-sm-3 my-1 mx-5">
+					{{ form_row(form.email) }}
+				</div>
+				<div class="col-sm-2 my-1 mx-5">
+					{{ form_row(form.phone) }}
+				</div>
+				<div class="col-sm-3 my-1 mx-5">
+					{{ form_row(form.object) }}
+				</div>
 			</div>
-			<div class="col-sm-3 my-1 ">
-				{{ form_row(form.society) }}
+			<div class="my-1 ">
+				{{ form_row(form.comment) }}
 			</div>
-			<div class="col-sm-3 my-1 ">
-				{{ form_row(form.email) }}
-			</div>
-			<div class="col-sm-3 my-1 ">
-				{{ form_row(form.phone) }}
-			</div>
-			<div class="col-sm-3 my-1 ">
-				{{ form_row(form.object) }}
-			</div>
+			<button class="btn btn-outline-dark mx-3 my-3 col-sm-3" type="submit">Envoyer</button>
+			{{ form_end(form) }}
 		</div>
-		{{ form_row(form.comment) }}
-		<button class="btn btn-outline-dark mx-3 my-3 col-sm-3" type="submit">Envoyer</button>
-		{{ form_end(form) }}
 	</div>
 {% endblock %}
+{% block javascripts %}{% endblock %}
