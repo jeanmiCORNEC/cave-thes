@@ -76,6 +76,10 @@ a:hover {
     border-radius: 15px;
 }
 
+.gras {
+    font-weight: bold;
+}
+
 /* event */
 
 .alert-event {
@@ -91,4 +95,10 @@ a:hover {
 
 .alert-link:hover {
     color: #414145;
+}
+
+/* news-letter */
+
+.news-letter {
+    height: 90vh;
 }

@@ -26,8 +26,7 @@ class ContactController extends AbstractController
             ->from($contact->get('email')->getData())
             ->to('maelgut@hotmail.fr')
             ->subject($contact->get('object')->getData())
-            ->htmlTemplate('contact/mail.html.twig', [
-            ])
+            ->htmlTemplate('contact/mail.html.twig')
             ->context([
                 'isPro' => $contact->get('isPro')->getData(),
                 'name' =>$contact->get('name')->getData(),

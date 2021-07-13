@@ -22,12 +22,13 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('Cave');
+            ->setTitle('cave');
     }
 
     public function configureMenuItems(): iterable
     {
         // yield MenuItem::linktoDashboard('Tableau de Bord', 'fa fa-home');
+        yield MenuItem::linkToRoute('retour à la cave', 'fas fa-cart', 'main');
         yield MenuItem::linkToCrud('Evénement', 'fas fa-bullhorn', Event::class);
     }
 }
