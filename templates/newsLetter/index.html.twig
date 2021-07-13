@@ -1,19 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello NewsLetterController!
-{% endblock %}
 
 {% block body %}
-	<div class="container-fluid news-letter">
-		<h1>Inscription à la newsLetter</h1>
+	<div class="container news-letter text-center">
+		<h1>Inscription à la newsletter</h1>
 
-		<p>En vous inscrivant à notre newsLetter, vous acceptez que nous enregistrions votre adresse email afin de pouvoir vous l'envoyer</p>
-		<div class="mb-3">
+		<p>En vous inscrivant à notre newsletter, vous acceptez que nous enregistrions votre adresse email afin de pouvoir vous l'envoyer</p>
+		<div>
 			{{ form_start(form)}}
 			<div class="warning">
 				{{ form_errors(form) }}
 			</div>
-			<div class="col-sm-3 my-1 mx-5">
+			<div class="col-sm-2 my-1 mx-5 ms-auto me-auto">
 				{{ form_row(form.email) }}
 			</div>
 			<button type="submit" class="btn btn-outline-dark mx-3 my-3 col-sm-3">Envoyer</button>

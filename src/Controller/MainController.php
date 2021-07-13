@@ -16,6 +16,7 @@ class MainController extends AbstractController
     {
 
         $event = $eventRepository->findAll();
+        
         return $this->render('main/index.html.twig', [
             'controller_name' => 'MainController',
             'event' => $event

@@ -30,7 +30,8 @@ class NewsLetterController extends AbstractController
 
             $mailer->send($email);
 
-            $this->addFlash('message', 'votre email a bien été envoyé');
+            $this->addFlash('message', 'votre demande d\'adhésion à la newsletter a bien été envoyée');
+
             return $this->redirectToRoute('main', [
                 'contact' => $contact,
             ]);

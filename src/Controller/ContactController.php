@@ -37,8 +37,8 @@ class ContactController extends AbstractController
                 'comment' => $contact->get('comment')->getData()
             ]);
             $mailer->send($email);
-            $this->addFlash('message', 'votre email a bien été envoyé');
-            return $this->redirectToRoute('contact', [
+            $this->addFlash('message', 'votre demande d\'informations  a bien été envoyée');
+            return $this->redirectToRoute('main', [
                 'contact' => $contact,
             ]);
         }

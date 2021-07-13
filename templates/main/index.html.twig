@@ -7,13 +7,20 @@
 		{% include "/assets/_event.html.twig" %}
 	{% endif %}
 
+	{% for message in app.flashes('message') %}
+		<div class="alert alert-success alert-dismissible fade show my-3" role="alert">
+			{{ message }}
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+	{% endfor %}
+
 	{% include "/assets/_carousel.html.twig" %}
 
 	<!-- infos & newsletter -->
 	<div class=" infos container text-center">
 		<div class="col-md">
 			<h3 class="my-3">La Cave</h3>
-			<p>Retrouvez la cave à Marseille dans le quartier de la plaine :
+			<p>Retrouvez la cave à thés dans le quartier de la Plaine au
 				<span>
 					<a href="https://g.page/caveathes?share" target="_blank" class="adress p-1">
 						7 Rue Fontange 13006 Marseille.</a>
@@ -22,6 +29,11 @@
 			<h4 class="my-3">Horaires :
 			</h4>
 			<p>Du mardi au samedi 10h-13h et 15h-19h</p>
+			<h4 class="my-3">Téléphone :
+			</h4>
+			<p>
+				<a href="tel:+33980615299">09 80 61 52 99</a>
+			</p>
 		</div>
 		<div class="my-3">
 			<p>
